@@ -28,10 +28,9 @@ With the exception of the initial cells (importing packages, and setting the dat
 
 You will need to update the objects: data_dir and figure_dir with the paths to the data and figure sub-directories, respectively (will create the figure directory for you). This should be done by editing and running the cell containing the following code:
 
-'''data_dir = "C:\\Users\\TNEL - Human 2\\Desktop\\UH3-NS100548-01_PCS01_Analysis\\Data\\" ###UPDATE ME WITH CORRECT PATH TO DATA FOLDER
-figure_dir = "C:\\Users\\TNEL - Human 2\\Desktop\\UH3-NS100548-01_PCS01_Analysis\\Figures\\" ###UPDATE ME WITH CORRECT PATH TO FIGURE FOLDER (WILL CREATE FOLDER IF IT DOESN'T EXIST)
-if not os.path.exists(figure_dir):
-    os.makedirs(figure_dir)'''
+```data_dir = "C:\\Users\\TNEL - Human 2\\Desktop\\UH3-NS100548-01_PCS01_Analysis\\Data\\"``` 
+
+```figure_dir = "C:\\Users\\TNEL - Human 2\\Desktop\\UH3-NS100548-01_PCS01_Analysis\\Figures\\"```
  
  ## Data Format
  
