@@ -7,7 +7,7 @@ This script does not contain the LFP preprocessing code. LFP preprocessing was d
 ## Install
 Script was created and run using Anaconda installation of Jupyter Notebook. 
 
-Download the Jupyter Notebook and Data folder. The script should be contained in a directory, with a Data sub-directory. The data files contained in the Data folder in this repository are required to run the scripts. See below for details regarding those files. 
+Download the Jupyter Notebook and Data.zip. The script should be contained in a directory, with a Data sub-directory. The data files contained in Data.zip in this repository are required to run the scripts. See below for details regarding those files. 
 
 Required packages:
 - os
