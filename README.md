@@ -48,5 +48,19 @@ You will need to update the objects: data_dir and figure_dir with the paths to t
 
 - **UH3-NS100548-01_PCS01_DailyLFP_Corrected_Power.csv and UH3-NS100548-01_PCS01_DailyLFP_Corrected_WPLI.csv** contain Power and WPLI, respectively, for the patient daily LFP recordings AFTER the removal of the stimulation artifact signal (see saline recordings above). Long form DF with each row being power at a given frequency, within a given channel (power) or hemisphere (WPLI) for a specific recording.
 
+- **UH3-NS100548-01_PCS01_Power_WPLI_ByDay.npy** is a dictionary (saved as a numpy array, so need to access elements differently-done in script) Key/value pairs are as follows:
+  - *Frequencies*- (32,) numpy array containing the frequencies used in the decomposition. 
+  - *power_days_list*- list containing the day numbers for power recordings.
+  - *all_power*- list of four numpy arrays. Each array is (n_frequencies, n_daysOfRecording) with the power values for:
+    - all_power[0] = VC/VS left
+    - all_power[1] = VC/VS right
+    - all_power[2] = cortical left
+    - all_power[3] = cortical right
+  - *coh_days_list*- list containing the day numbers for the WPLI data      
+  - *all_coh* list of four numpy arrays. Each array is (n_frequencies, n_daysOfRecording) with the cortical-VC/VS WPLI values for:
+    - all_coh[0] = left hemisphere WPLI
+    - all_coh[1] = right hemisphere WPLI
+    - all_coh[2] = average ipsi WPLI
+
 ## Info
 Contact **olsen378@umn.edu** for more info.
